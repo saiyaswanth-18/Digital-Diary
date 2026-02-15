@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <link rel="stylesheet" href="../static/css/register.css"> 
+
+</head>
+<body>
+       <div id="alert_box" class="{% if msg %}show{% else %}hidden{% endif %}">
+    <span id="alert_message" >{{msg}}</span>
+    <button type="button" id="close_alert">x</button>
+       </div>
+
+    <form id="reg-form" method="post" action="/register">
+        <h1 class="title">Digital Diary</h1>
+        <input type="text" id="u_name" placeholder="Username" name="user_name" maxlength="25">
+        <input type="email" placeholder="Email" name="user_mail" id="u_mail">
+        <input type="password" id="u_password" placeholder="password" name="user_password" >
+        <input type="password" placeholder="Confirm Password" id="u_cpassword">
+        <br>
+        <p id="already-login">Already have an account..click here to <a href="/login">login</a></p>
+        <button type="button" id="register-btn">Register</button>
+    </form>
+    <script src="../static/js/reg_validation.js"></script>
+</body>
+</html>

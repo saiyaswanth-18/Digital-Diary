@@ -1,0 +1,76 @@
+body{
+    background-color: antiquewhite;
+    font-family:"Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+}
+.top_box{
+    display: flex;
+    border-radius: 20px;
+    padding:10px;
+    background-color: #ecdbbd;
+}
+
+#title{
+    font-size: 50px;
+    color: #604926;
+    flex:1;
+}
+.sign_buttons{
+    height:40px;
+    width:100px;
+    margin:10px;
+    background-color: #604926;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    color:antiquewhite;
+    font-family:"Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    transition: 0.2s;
+    cursor: pointer;
+}
+.sign_buttons:hover{
+    transform: scale(1.1);
+    background-color: #ecdbbd;
+    color: #604926;
+    box-shadow: 0 0 10px 2px #604926;
+}
+#tag_line{
+    text-align: center;
+    color:#604926;
+    font-size: 34px;
+    font-weight: 700;
+    line-height: 1.2;
+    text-shadow: 0px 2px 8px rgba(0,0,0,0.4);
+    animation: fadeSlide 1.3s ease-out forwards;
+}
+@keyframes fadeSlide {
+    0% { opacity: 0; transform: translateY(20px); }
+    100% { opacity: 1; transform: translateY(0); }
+}
+#details{
+    margin-top: 40px;
+    justify-self: center;
+    color: #604926;
+    font-size:20px;
+    width:80%;
+    text-align: justify;
+}
+.start_button{
+    background-color: #ecdbbd;
+    color:#604926;
+    border-radius: 20px;
+    font-family:"Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    font-size: 16px;
+    padding:10px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.5s;
+    border:none;
+}
+#start_btn{
+    justify-self: center;
+}
+.start_button:hover{
+    background-color: #604926;
+    box-shadow: 0 0 8px 2px #604926;
+    color: #ecdbbd;
+}

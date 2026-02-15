@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+
+    <link rel="stylesheet" href="../static/css/entries.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <h1>Your Diary Entries</h1>
+
+    <div class="top-bar">
+        <input type="text" id="search_entry" placeholder="Search by title or date(YYYY-MM-DD)...">
+
+        <button class="new-entry-btn" onclick="window.location.href='/diary'">
+            <i class="fa-solid fa-plus"></i> New Entry
+        </button>
+    </div>
+
+    <div id="entries_list">
+    </div>
+
+    <script src="../static/js/entries.js"></script>
+</body>
+</html>

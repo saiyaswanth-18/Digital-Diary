@@ -1,0 +1,212 @@
+body {
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+    background-color: antiquewhite;
+    margin-top: 40px;
+    font-family:"Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+}
+#diary-container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 90vh;
+    width: 85%;
+    box-shadow: 0 0 12px 6px #604926;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#diary-form{
+    height:100%;
+}
+#diary-details {
+    background-color: #ecdbbd;
+    border-bottom: 5px double #604926;
+    height: 150px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+}
+#diary-details input {
+    height: 35px;
+    background-color: #604926;
+    color: antiquewhite;
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    font-size: 20px;
+    margin: 5px;
+    outline: none;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    font-weight: 600;
+}
+#diary-title {
+    flex: 1;
+}
+
+#diary-date {
+    width: 250px;
+    color-scheme: dark;
+    text-align: center;
+}
+#save-diary {
+    padding: 10px;
+    background-color: #604926;
+    color: antiquewhite;
+    border-radius: 20px;
+    margin: 10px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    border: none;
+    font-weight: 600;
+    font-size: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#save-diary:hover{
+    background-color:#ecdbbd;
+    color: #604926;
+    box-shadow: 0 0 8px 2px #604926;
+}
+
+#diary-content-box {
+    display: flex;
+    flex-direction: row;
+    height: 78%;
+    background-color: rgb(245, 225, 198);
+}
+
+
+#diary-content {
+    flex: 2;
+    font-size: 20px;
+    padding: 20px;
+    outline: none;
+    scrollbar-width: none;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    color: #604926;
+    font-weight: 600;
+    resize: none;
+    background-color: rgb(245, 225, 198);
+    border: none;
+    /* overflow-y: scroll; */
+}
+
+#gallery-box {
+    flex: 1;
+    background-color: #f4e1c1;
+    border-left: #604926 double 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: auto; */
+}
+
+#gallery-label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #604926;
+    margin-bottom: 10px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+}
+
+#media-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#media-preview img,
+#media-preview video {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#media-preview video {
+    background-color: black;
+}
+
+#media-upload {
+    margin-top: 10px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+}
+#file_upload {
+    display: none;
+}
+#upload_btn{
+    border:solid #604926 2px;
+    padding:5px;
+    border-radius: 20px;
+    font-size: 15px;
+    color:#604926;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#upload_btn:hover{
+    background-color:#604926;
+    color:#f4e1c1;
+}
+#media-preview {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 100%;
+    padding-right: 5px;
+    scrollbar-width: none;
+}
+.remove_btn{
+    background:transparent;
+    color:rgb(107, 32, 32);
+    margin-top: 0px;
+    margin-right: 0px;
+    position:absolute;
+    outline: none;
+    border:none;
+    padding:3px;
+    transition-duration: 0.5s;
+}
+
+.remove_btn:hover{
+    border-radius: 30px;
+    background-color: rgb(107, 32, 32);
+    color: white;
+}
+
+.files_media{
+    height:300px;
+    width:300px;
+}
+
+/* .media_wrapper{
+    border:5px solid black;
+} */
+
+.maximize_image{
+    background:transparent;
+    color:black;
+    margin-top: 205px;
+    margin-right: 0px;
+    position:absolute;
+    outline: none;
+    border:none;
+    transition: 0.5s;
+}
+.maximize_image:hover{
+    transform: scale(1.3);
+}
+#file_upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#file_upload::file-selector-button {
+    display: none;
+}

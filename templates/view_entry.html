@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../static/css/view_entry.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="entry-container">
+    <form id="entry-form" >
+        <div id="entry-details">
+            <p id="entry-title">{% if entry[0]%}{{entry[0]}}{%else%}no title{%endif%} </p>
+            <p id="entry-date">{{entry[2]}}</p>
+        </div>
+        <div id="entry-content-box">
+            <textarea id="entry-content" name="content" readonly>{{entry[1]}}</textarea>
+            
+            <div id="gallery-box">
+                <p id="gallery-label"><i class="fa-solid fa-images"></i> Gallery</p>
+                <input type="file" id="file_upload" multiple accept="image/*,video/*" name="media_files" readonly>
+                <div id="media-preview">
+                    {% for file in media_files %}
+                        <div class="media_wrapper">
+                        {% if file[1].startswith("image") %}
+                            <img src="/uploads/{{file[0]}}" width="300">
+                            <button class="maximize_image" type="button"><i class="fa-solid fa-expand"></i></button>
+                        {% elif file[1].startswith("video") %}
+                            <video src="/uploads/{{file[0]}}" width="300" controls="true"></video>
+                        {% endif %}
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </form>
+    </div>
+        <script src="../static/js/view_entry.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+body {
+    margin: 0;
+    padding: 20px;
+    background: antiquewhite;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    overflow: hidden;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    color: #604926;
+    margin-bottom: 30px;
+}
+.top-bar {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;      
+    align-items: center;
+    gap: 20px;                     
+    margin-bottom: 30px;
+}
+#search_entry {
+    flex: 1;                       
+    max-width: 75%;
+    padding: 10px 15px;
+    border-radius: 25px;
+    font-size: 16px;
+    outline: none;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    background-color: white;
+    margin-left: 10%;
+    color: #604926;
+    border:none;
+}
+
+#search_entry::placeholder {
+    color: #7c623b;
+    opacity: 0.6;
+}
+
+.new-entry-btn {
+    padding: 10px 16px;
+    background: #ecdbbd;
+    border: none;
+    color: #604926;
+    font-size: 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    box-shadow: 0 0 8px 2px #604926;
+    font-size: 18px;
+}
+
+.new-entry-btn:hover {
+    background: #604926;
+    color: #ecdbbd;
+    box-shadow: 0 0 8px 4px #7c623b;
+}
+
+#entries_list {
+ 
+    height: calc(100vh - 220px);
+    width:65%;
+    margin: auto;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    overflow-y: auto;
+    scrollbar-width: none;
+    padding: 30px;
+}
+.entry-item {
+    padding: 15px;
+    background-color: #ecdbbd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.2s;
+    border-radius: 30px;
+    height:120px;
+    border:1px solid #604926;
+    margin-bottom: 3px;
+}
+
+.entry-item:hover {
+    transform: scale(1.02);
+    box-shadow: 0 0 6px 2px #604926;
+}
+
+.entry-item .title{
+    color: #604926;
+    font-size:18px;
+}
+.entry-item .date {
+    margin-top: 4px;
+    font-size: 28px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive; 
+    font-weight: bold;
+    color: #ecdbbd;
+    padding:10px;
+    border-radius: 30px;
+    background-color: #604926;
+    width: fit-content;
+}
+.no-results {
+    text-align: center;
+    margin-top: 20px;
+    color:#604926;
+} 

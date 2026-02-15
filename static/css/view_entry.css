@@ -1,0 +1,156 @@
+body {
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    margin: 30px;
+    background-color: antiquewhite;
+    margin-top: 40px;
+    font-family:"Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;;
+}
+#entry-container {
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 85%;
+    box-shadow: 0 0 12px 6px #604926;
+    overflow: hidden;
+}
+#entry-form{
+    height:100%;
+}
+#entry-details {
+    background-color: #ecdbbd;
+    border-bottom: 5px double #604926;
+    height: 120px;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex:2;
+}
+
+#entry-date,#entry-title {
+    width: 250px;
+    color-scheme: dark;
+    text-align: center;
+    height: 35px;
+    background-color: #604926;
+    color: antiquewhite;
+    border: none;
+    border-radius: 25px;
+    padding: 8px;
+    font-size: 20px;
+    margin: 5px;
+    outline: none;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    font-weight: 600;
+}
+#entry-title{
+    flex:1;
+}
+
+#entry-content-box {
+    display: flex;
+    flex-direction: row;
+    height: 84%;
+    background-color: rgb(245, 225, 198);
+}
+
+#entry-content {
+    flex: 2;
+    font-size: 20px;
+    padding: 20px;
+    outline: none;
+    scrollbar-width: none;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    color: #604926;
+    font-weight: 600;
+    resize: none;
+    background-color: rgb(245, 225, 198);
+    border: none;
+}
+
+#gallery-box {
+    flex: 1;
+    background-color: #f4e1c1;
+    border-left: #604926 double 5px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* overflow-y: auto; */
+}
+
+#gallery-label {
+    font-size: 20px;
+    font-weight: 700;
+    color: #604926;
+    margin-bottom: 10px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+}
+
+#media-preview {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+
+#media-preview img,
+#media-preview video {
+    width: 280px;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+#media-preview video {
+    background-color: black;
+}
+.media_wrapper{
+    position: relative;
+}
+#file_upload {
+    display: none;
+}
+#media-preview {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    overflow-y: auto;
+    width: 100%;
+    max-height: 100%;
+    padding-right: 5px;
+    scrollbar-width: none;
+}
+.files_media{
+    height:300px;
+    width:300px;
+}
+
+.maximize_image{
+    background:transparent;
+    color:black;
+    margin-top: 205px;
+    margin-right: 0px;
+    position:absolute;
+    outline: none;
+    border:none;
+    transition: 0.5s;
+}
+.maximize_image:hover{
+    transform: scale(1.2);
+}
+#file_upload::-webkit-file-upload-button {
+    visibility: hidden;
+}
+
+#file_upload::file-selector-button {
+    display: none;
+}
+
+
+   

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Diary</title>
+    <link rel="stylesheet" href="../static/css/diary.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+</head>
+<body>
+
+    <div id="diary-container">
+    <form id="diary-form" action="/submit_entry" method="POST" enctype="multipart/form-data">
+        <div id="diary-details">
+            <input type="text" placeholder="Title (optional)" id="diary-title" name="title" maxlength="65">
+            <input type="date" id="diary-date" name="date">
+            <button id="save-diary"><i class="fa-solid fa-save"></i> Save</button>
+        </div>
+
+        <div id="diary-content-box">
+            <textarea placeholder="Write your diary..." id="diary-content" name="content"></textarea>
+            
+            <div id="gallery-box">
+                <p id="gallery-label"><i class="fa-solid fa-images"></i> Gallery</p>
+                <input type="file" id="file_upload" multiple accept="image/*,video/*" name="media_files">
+                <label for="file_upload" id="upload_btn"><i class="fa-solid fa-upload"></i> Upload Media</label>
+                <div id="media-preview"></div>
+            </div>
+        </div>
+    </form>
+    </div>
+        <script src="../static/js/diary.js"></script>
+</body>
+</html>
+
+
+
+

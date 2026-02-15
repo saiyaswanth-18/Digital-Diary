@@ -1,0 +1,57 @@
+body{
+    height:90vh;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+.options-container{
+    padding:30px;
+    display: flex;
+
+}
+#logout_user{
+    margin-left:1000px;
+    background-color: #604926;
+    color:#ecdbbd;
+    padding: 15px;
+   font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+   border-radius: 30px;
+   cursor: pointer;
+   font-size: 16px;
+   border:none;
+   transition: 0.3s;
+}
+#logout_user:hover{
+    background-color: #ecdbbd;
+    color: #604926;
+    box-shadow: 0 0 10px 2px #604926;
+
+}
+.user-options{
+   margin:60px;
+   padding:80px;
+   background-color: #ecdbbd;
+   border-radius:30px;
+   font-size:30px;
+   font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+   align-content: center;
+   text-align: center;
+   height:220px;
+   width:220px;
+   color:#604926;
+   box-shadow: 0 0 20px 2px #604926;
+   transition: all ease 0.3s;
+   cursor:pointer;
+}
+.user-options:hover{
+    box-shadow: 0 0 30px 4px #604926;
+    transform: scale(1.03);
+}
+#welcome_user{
+   font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+   color:#604926;
+   font-size: 38px;
+   text-align:center;
+   font-weight:900;
+}

@@ -1,0 +1,82 @@
+body{
+    display:flex;
+    justify-content: center;
+    height:90vh;
+    background-color: antiquewhite;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+
+}
+.hidden {
+    display: none;
+}
+.show {
+    display: block; 
+    background-color: #ecdbbd;
+    color: rgb(98, 14, 14);
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+    width:400px;
+    height:50px;
+    text-align: center;
+    align-content: center;
+    padding:20px;
+    font-size:16px ;
+}
+#close_alert {
+    color: rgb(98, 14, 14);
+    background: none;
+    border: none;
+    cursor: pointer;
+    float:right;
+    font-size:20px;
+    font-weight: bold;
+    
+}
+#login-form input{
+    padding:10px;
+    margin:10px;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    color: #604926;
+    font-size: 20px;
+    border:none;
+    outline: none;
+    border-radius: 20px;
+    background-color: antiquewhite;
+}
+#login-form{
+    width: 350px;
+    text-align: center;
+    background-color: #ecdbbd;
+    padding:50px;
+    margin:50px;
+    height: 380px;
+    align-content: center;
+    border-radius: 30px;
+    box-shadow: 0 0 15px 2px #604926;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    display: grid;
+    margin-top:150px;
+    position:fixed;
+}
+#login-form button{
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    border-radius:20px;
+    padding:10px;
+    background-color:#604926;
+    border:none;
+    color:#ecdbbd;
+    margin: 20px;
+    font-size: 20px;
+    cursor:pointer;
+}
+#login-form input::placeholder{
+    color: #7c623b;
+    opacity: 0.7;
+}
+.title{
+    text-align: center;
+    color: #604926;
+    font-family: "Lucida Calligraphy", "Brush Script MT", "Segoe Script", cursive;
+    margin:20px;
+}
